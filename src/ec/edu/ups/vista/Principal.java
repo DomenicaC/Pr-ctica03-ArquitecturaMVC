@@ -39,7 +39,7 @@ public class Principal {
         while (!salir) {
 
             System.out.println("\n");
-            System.out.println("1. CRUD Ballena -> HashMap");
+            System.out.println("1. CRUD Ballena -> TreeMap");
             System.out.println("2. CRUD Lagarto -> Set");
             System.out.println("3. CRUD Perro -> SortedSet");
             System.out.println("4. CRUD Serpiente -> List");
@@ -119,6 +119,7 @@ public class Principal {
                                 System.out.println("Ingresse su habitat ");
                                 String hab = dato.next();
                                 ballena.setHabitat(hab);
+                                
                                 controladorBallena.create(ballena);
 
                                 break;
@@ -132,7 +133,12 @@ public class Principal {
 
                             case 3:
                                 System.out.println("Has seleccionado la opción 'Update' \n ");
-                                System.out.println("Ingrese en nombre de la ballena ");
+                                
+                                System.out.println("Ingrese el codigo a modificar");
+                                codigo = dato.nextInt();
+                                
+                                if(controladorPerro.read(codigo) != null){
+                                    System.out.println("Ingrese en nombre de la ballena ");
                                 String nombre1 = dato.next();
                                 ballena.setNombre(nombre1);
 
@@ -177,6 +183,10 @@ public class Principal {
                                 ballena.setHabitat(hab1);
 
                                 controladorBallena.update(ballena);
+                                } else{
+                                    System.out.println("El codigo ingresado no existe");
+                                }
+                                
                                 break;
 
                             case 4:
@@ -188,7 +198,7 @@ public class Principal {
 
                             case 5:
                                 System.out.println("A elegido la opcion Imprimir lista \n");
-
+                                controladorBallena.print();
                                 break;
 
                             case 6:
@@ -278,8 +288,8 @@ public class Principal {
                             case 2:
                                 System.out.println("Has seleccionado la opción 'Read'\n");
                                 System.out.println("Ingrese el usuario a leer");
-                                int codigo = dato.nextInt();
-                                System.out.println(controladorLagarto.read(codigo));
+                                int codigo2 = dato.nextInt();
+                                System.out.println(controladorLagarto.read(codigo2));
                                 break;
 
                             case 3:
@@ -287,10 +297,10 @@ public class Principal {
                                 System.out.println("\n");
 
                                 System.out.println("¿Ingrese el codigo del que desea modificar");
-                                int codigo1 = dato.nextInt();
-                                controladorLagarto.update(lagarto);
-
-                                System.out.println("\n");
+                                codigo2 = dato.nextInt();
+                                
+                                if(controladorLagarto.read(codigo2) != null){
+                                    System.out.println("\n");
 
                                 System.out.println("Ingrese en nombre del lagarto");
                                 String nombre1 = dato.next();
@@ -337,17 +347,21 @@ public class Principal {
                                 lagarto.setColor(colorL1);
 
                                 controladorLagarto.update(lagarto);
+                                }else{
+                                    System.out.println("El codigo ingresado no existe");
+                                }
                                 break;
 
                             case 4:
                                 System.out.println("Has seleccionado la opción 'Delete'\n");
                                 System.out.println("Ingrese el codigo a eliminar");
-                                codigo = dato.nextInt();
-                                controladorLagarto.delete(codigo);
+                                codigo2 = dato.nextInt();
+                                controladorLagarto.delete(codigo2);
                                 break;
 
                             case 5:
                                 System.out.println("A elegido la opcion Imprimir lista");
+                                controladorLagarto.print();
                                 break;
 
                             case 6:
@@ -385,7 +399,6 @@ public class Principal {
 
                                 System.out.println("Ingrese en nombre del perro ");
                                 String nombre = dato.next();
-                                //System.out.println("nombre "+nombre);
                                 perro.setNombre(nombre);
 
                                 System.out.println("Ingrese la raza");
@@ -434,13 +447,18 @@ public class Principal {
                             case 2:
                                 System.out.println("Has seleccionado la opción 'Read'\n");
                                 System.out.println("Ingrese el usuario a leer");
-                                int codigo = dato.nextInt();
-                                System.out.println(controladorPerro.read(codigo));
+                                int codigo3 = dato.nextInt();
+                                System.out.println(controladorPerro.read(codigo3));
                                 break;
 
                             case 3:
                                 System.out.println("Has seleccionado la opción 'Update'\n");
-                                System.out.println("Ingrese en nombre del perro ");
+                                
+                                System.out.println("Ingrese el codigo a modificar");
+                                codigo3= dato.nextInt();
+                                
+                                if(controladorPerro.read(codigo3) != null){
+                                    System.out.println("Ingrese en nombre del perro ");
                                 String nombre1 = dato.next();
                                 perro.setNombre(nombre1);
 
@@ -485,17 +503,20 @@ public class Principal {
                                 perro.setHabitat(hab1);
 
                                 controladorPerro.update(perro);
+                                } else{
+                                    System.out.println("El codigo ingresado no existe");
+                                }
                                 break;
 
                             case 4:
                                 System.out.println("Has seleccionado la opción 'Delete'\n");
                                 System.out.println("Ingrese el codigo a eliminar");
-                                codigo = dato.nextInt();
-                                controladorPerro.delete(codigo);
+                                codigo3 = dato.nextInt();
+                                controladorPerro.delete(codigo3);
                                 break;
 
                             case 5:
-                                System.out.println(controladorPerro.print());
+                                controladorPerro.print();
                                 break;
 
                             case 6:
@@ -577,67 +598,78 @@ public class Principal {
 
                             case 2:
                                 System.out.println("Has seleccionado la opción 'Read'\n");
-                                System.out.println("Ingrese el usuario a leer");
-                                int codigo = dato.nextInt();
-                                System.out.println(controladorSerpiente.read(codigo));
+                                System.out.println("Ingrese el codigo a leer");
+                                int codigo4 = dato.nextInt();
+                                System.out.println(controladorSerpiente.read(codigo4));
                                 break;
 
                             case 3:
                                 System.out.println("Has seleccionado la opción 'Update'\n");
-                                System.out.println("Ingrese en nombre de la serpiente");
-                                String nombre1 = dato.next();
-                                serpiente.setNombre(nombre1);
-                                System.out.println("\n");
 
-                                System.out.println("Ingrese el tipo de sangre 'fria o caliente'");
-                                String tipoS1 = dato.next();
-                                serpiente.setSangre(tipoS1);
-                                System.out.println("\n");
+                                System.out.println("Ingrese el codigo a modificar");
+                                codigo4 = dato.nextInt();
 
-                                System.out.println("Ingrese la descripcion");
-                                String desc1 = dato.next();
-                                serpiente.setDescripcion(desc1);
+                                if (controladorSerpiente.read(codigo4) != null) {
+                                    System.out.println("Ingrese en nombre de la serpiente");
+                                    String nombre1 = dato.next();
+                                    serpiente.setNombre(nombre1);
+                                    System.out.println("\n");
 
-                                System.out.println("ingrese la alimentacion");
-                                String ali1 = dato.next();
-                                serpiente.setAlimentacion(ali1);
+                                    System.out.println("Ingrese el tipo de sangre 'fria o caliente'");
+                                    String tipoS1 = dato.next();
+                                    serpiente.setSangre(tipoS1);
+                                    System.out.println("\n");
 
-                                System.out.println("¿Es venenosa? \n Ingrese valores de 'true' o 'false'");
-                                boolean veneno1 = dato.nextBoolean();
-                                serpiente.setVenenosa(veneno1);
+                                    System.out.println("Ingrese la descripcion");
+                                    String desc1 = dato.next();
+                                    serpiente.setDescripcion(desc1);
 
-                                System.out.println("Tiene extremidades \n Ingrese valores de 'true' o 'false'");
-                                boolean ext1 = dato.nextBoolean();
-                                serpiente.setExtremidades(ext1);
+                                    System.out.println("ingrese la alimentacion");
+                                    String ali1 = dato.next();
+                                    serpiente.setAlimentacion(ali1);
 
-                                System.out.println("¿Cuantos huevos tiene?");
-                                int numHu1 = dato.nextInt();
-                                serpiente.setNumHuevos(numHu1);
+                                    System.out.println("¿Es venenosa? \n Ingrese valores de 'true' o 'false'");
+                                    boolean veneno1 = dato.nextBoolean();
+                                    serpiente.setVenenosa(veneno1);
 
-                                System.out.println("¿Como se desplaza");
-                                String des1 = dato.next();
-                                serpiente.setDesplazamiento(des1);
+                                    System.out.println("Tiene extremidades \n Ingrese valores de 'true' o 'false'");
+                                    boolean ext1 = dato.nextBoolean();
+                                    serpiente.setExtremidades(ext1);
 
-                                System.out.println("Ingrese el sexo");
-                                String sex1 = dato.next();
-                                serpiente.setSexo(sex1);
+                                    System.out.println("¿Cuantos huevos tiene?");
+                                    int numHu1 = dato.nextInt();
+                                    serpiente.setNumHuevos(numHu1);
 
-                                System.out.println("Ingresse el color de la serpiente");
-                                String colorL1 = dato.next();
-                                serpiente.setColor(colorL1);
+                                    System.out.println("¿Como se desplaza");
+                                    String des1 = dato.next();
+                                    serpiente.setDesplazamiento(des1);
 
-                                controladorSerpiente.update(serpiente);
+                                    System.out.println("Ingrese el sexo");
+                                    String sex1 = dato.next();
+                                    serpiente.setSexo(sex1);
+
+                                    System.out.println("Ingresse el color de la serpiente");
+                                    String colorL1 = dato.next();
+                                    serpiente.setColor(colorL1);
+
+                                    controladorSerpiente.update(serpiente);
+
+                                } else {
+                                    System.out.println("El codigo no exixte");
+                                }
+
                                 break;
 
                             case 4:
                                 System.out.println("Has seleccionado la opción 'Delete'\n");
                                 System.out.println("Ingrese el codigo a eliminar");
-                                codigo = dato.nextInt();
-                                controladorSerpiente.delete(codigo);
+                                codigo4 = dato.nextInt();
+                                controladorSerpiente.delete(codigo4);
                                 break;
 
                             case 5:
                                 System.out.println("A elegido la opcion Imprimir lista");
+                                controladorSerpiente.print();
                                 break;
 
                             case 6:
