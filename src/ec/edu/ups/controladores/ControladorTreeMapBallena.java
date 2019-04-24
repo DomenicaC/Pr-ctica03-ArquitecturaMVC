@@ -51,7 +51,7 @@ public class ControladorTreeMapBallena {
         for (Map.Entry<Integer, Ballena> elemento : lista.entrySet()) {
             int key = elemento.getKey();
             String nomBallena = elemento.getValue().getNombre();
-            System.out.println("Key: " + key + "Ballena: " + nomBallena);
+            System.out.println("Key: " + key + " Ballena: " + nomBallena);
         }
     }
 }

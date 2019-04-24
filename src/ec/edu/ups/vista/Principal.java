@@ -61,7 +61,7 @@ public class Principal {
                         System.out.println("1. Create");
                         System.out.println("2. Read");
                         System.out.println("3. Update");
-                        System.out.println("4. Dalete");
+                        System.out.println("4. Delete");
                         System.out.println("5. Imprimir Lista");
                         System.out.println("6. Regresar");
 
@@ -119,7 +119,7 @@ public class Principal {
                                 System.out.println("Ingresse su habitat ");
                                 String hab = dato.next();
                                 ballena.setHabitat(hab);
-                                
+
                                 controladorBallena.create(ballena);
 
                                 break;
@@ -133,60 +133,60 @@ public class Principal {
 
                             case 3:
                                 System.out.println("Has seleccionado la opción 'Update' \n ");
-                                
+
                                 System.out.println("Ingrese el codigo a modificar");
                                 codigo = dato.nextInt();
-                                
-                                if(controladorPerro.read(codigo) != null){
+
+                                if (controladorPerro.read(codigo) != null) {
                                     System.out.println("Ingrese en nombre de la ballena ");
-                                String nombre1 = dato.next();
-                                ballena.setNombre(nombre1);
+                                    String nombre1 = dato.next();
+                                    ballena.setNombre(nombre1);
 
-                                System.out.println("Ingrese el nombre cientifico ");
-                                String nomC1 = dato.next();
-                                ballena.setNomCientifico(nomC1);
+                                    System.out.println("Ingrese el nombre cientifico ");
+                                    String nomC1 = dato.next();
+                                    ballena.setNomCientifico(nomC1);
 
-                                System.out.println("Ingrese el peso ");
-                                double peso1 = dato.nextDouble();
-                                ballena.setPeso(peso1);
+                                    System.out.println("Ingrese el peso ");
+                                    double peso1 = dato.nextDouble();
+                                    ballena.setPeso(peso1);
 
-                                System.out.println("Ingrese el taman ");
-                                double tam1 = dato.nextDouble();
-                                ballena.setTamaño(tam1);
+                                    System.out.println("Ingrese el taman ");
+                                    double tam1 = dato.nextDouble();
+                                    ballena.setTamaño(tam1);
 
-                                System.out.println("ingrese el sexo ");
-                                String sex1 = dato.next();
-                                ballena.setSexo(sex1);
+                                    System.out.println("ingrese el sexo ");
+                                    String sex1 = dato.next();
+                                    ballena.setSexo(sex1);
 
-                                System.out.println("Ingrese el color ");
-                                String col1 = dato.next();
-                                ballena.setColor(col1);
+                                    System.out.println("Ingrese el color ");
+                                    String col1 = dato.next();
+                                    ballena.setColor(col1);
 
-                                System.out.println("Ingrese la veocidad ");
-                                double vel1 = dato.nextDouble();
-                                ballena.setVelocidad(vel1);
+                                    System.out.println("Ingrese la veocidad ");
+                                    double vel1 = dato.nextDouble();
+                                    ballena.setVelocidad(vel1);
 
-                                System.out.println("Ingrese el numero de huesos ");
-                                int numH1 = dato.nextInt();
-                                ballena.setNumHueso(numH1);
+                                    System.out.println("Ingrese el numero de huesos ");
+                                    int numH1 = dato.nextInt();
+                                    ballena.setNumHueso(numH1);
 
-                                System.out.println("Tiene pelo? \n Ingrese valores de 'true' o 'false' ");
-                                boolean pel1 = dato.nextBoolean();
-                                ballena.setPelo(pel1);
+                                    System.out.println("Tiene pelo? \n Ingrese valores de 'true' o 'false' ");
+                                    boolean pel1 = dato.nextBoolean();
+                                    ballena.setPelo(pel1);
 
-                                System.out.println("Ingrese que come la ballena ");
-                                String comida1 = dato.next();
-                                ballena.setComida(comida1);
+                                    System.out.println("Ingrese que come la ballena ");
+                                    String comida1 = dato.next();
+                                    ballena.setComida(comida1);
 
-                                System.out.println("Ingresse su habitat ");
-                                String hab1 = dato.next();
-                                ballena.setHabitat(hab1);
+                                    System.out.println("Ingresse su habitat ");
+                                    String hab1 = dato.next();
+                                    ballena.setHabitat(hab1);
 
-                                controladorBallena.update(ballena);
-                                } else{
+                                    controladorBallena.update(ballena);
+                                } else {
                                     System.out.println("El codigo ingresado no existe");
                                 }
-                                
+
                                 break;
 
                             case 4:
@@ -222,7 +222,7 @@ public class Principal {
                         System.out.println("1. Create");
                         System.out.println("2. Read");
                         System.out.println("3. Update");
-                        System.out.println("4. Dalete");
+                        System.out.println("4. Delete");
                         System.out.println("5. Imprimir lista");
                         System.out.println("6. Regresar");
 
@@ -298,56 +298,56 @@ public class Principal {
 
                                 System.out.println("¿Ingrese el codigo del que desea modificar");
                                 codigo2 = dato.nextInt();
-                                
-                                if(controladorLagarto.read(codigo2) != null){
+
+                                if (controladorLagarto.read(codigo2) != null) {
                                     System.out.println("\n");
 
-                                System.out.println("Ingrese en nombre del lagarto");
-                                String nombre1 = dato.next();
-                                lagarto.setNombre(nombre1);
+                                    System.out.println("Ingrese en nombre del lagarto");
+                                    String nombre1 = dato.next();
+                                    lagarto.setNombre(nombre1);
 
-                                System.out.println("Ingrese el tipo de sangre 'fria o caliente'");
-                                String tipoS1 = dato.next();
-                                lagarto.setSangre(tipoS1);
+                                    System.out.println("Ingrese el tipo de sangre 'fria o caliente'");
+                                    String tipoS1 = dato.next();
+                                    lagarto.setSangre(tipoS1);
 
-                                System.out.println("Ingrese los años de vida");
-                                int aVida1 = dato.nextInt();
-                                lagarto.setAñosVida(aVida1);
+                                    System.out.println("Ingrese los años de vida");
+                                    int aVida1 = dato.nextInt();
+                                    lagarto.setAñosVida(aVida1);
 
-                                System.out.println("Ingrese el tipo de piel ");
-                                String tiPiel1 = dato.next();
-                                lagarto.setTipoPiel(tiPiel1);
+                                    System.out.println("Ingrese el tipo de piel ");
+                                    String tiPiel1 = dato.next();
+                                    lagarto.setTipoPiel(tiPiel1);
 
-                                System.out.println("ingrese el modo de defensa ");
-                                String def1 = dato.next();
-                                lagarto.setModoDefensa(def1);
+                                    System.out.println("ingrese el modo de defensa ");
+                                    String def1 = dato.next();
+                                    lagarto.setModoDefensa(def1);
 
-                                System.out.println("¿Cambia de color? \n Ingrese valores de 'true' o 'false'");
-                                boolean camColor1 = dato.nextBoolean();
-                                lagarto.setCambiaColor(camColor1);
+                                    System.out.println("¿Cambia de color? \n Ingrese valores de 'true' o 'false'");
+                                    boolean camColor1 = dato.nextBoolean();
+                                    lagarto.setCambiaColor(camColor1);
 
-                                System.out.println("Tiene extremidades \n Ingrese valores de 'true' o 'false'");
-                                boolean ext1 = dato.nextBoolean();
-                                lagarto.setExtremidades(ext1);
+                                    System.out.println("Tiene extremidades \n Ingrese valores de 'true' o 'false'");
+                                    boolean ext1 = dato.nextBoolean();
+                                    lagarto.setExtremidades(ext1);
 
-                                System.out.println("¿Cuantos huevos tiene?");
-                                int numHu1 = dato.nextInt();
-                                lagarto.setNumHuevos(numHu1);
+                                    System.out.println("¿Cuantos huevos tiene?");
+                                    int numHu1 = dato.nextInt();
+                                    lagarto.setNumHuevos(numHu1);
 
-                                System.out.println("¿Como se desplaza");
-                                String des1 = dato.next();
-                                lagarto.setDesplazamiento(des1);
+                                    System.out.println("¿Como se desplaza");
+                                    String des1 = dato.next();
+                                    lagarto.setDesplazamiento(des1);
 
-                                System.out.println("Ingrese el sexo");
-                                String sex1 = dato.next();
-                                lagarto.setSexo(sex1);
+                                    System.out.println("Ingrese el sexo");
+                                    String sex1 = dato.next();
+                                    lagarto.setSexo(sex1);
 
-                                System.out.println("Ingresse el color del lagarto");
-                                String colorL1 = dato.next();
-                                lagarto.setColor(colorL1);
+                                    System.out.println("Ingresse el color del lagarto");
+                                    String colorL1 = dato.next();
+                                    lagarto.setColor(colorL1);
 
-                                controladorLagarto.update(lagarto);
-                                }else{
+                                    controladorLagarto.update(lagarto);
+                                } else {
                                     System.out.println("El codigo ingresado no existe");
                                 }
                                 break;
@@ -385,7 +385,7 @@ public class Principal {
                         System.out.println("1. Create");
                         System.out.println("2. Read");
                         System.out.println("3. Update");
-                        System.out.println("4. Dalete");
+                        System.out.println("4. Delete");
                         System.out.println("5. Imprimir lista");
                         System.out.println("6. Regresar");
 
@@ -453,57 +453,57 @@ public class Principal {
 
                             case 3:
                                 System.out.println("Has seleccionado la opción 'Update'\n");
-                                
+
                                 System.out.println("Ingrese el codigo a modificar");
-                                codigo3= dato.nextInt();
-                                
-                                if(controladorPerro.read(codigo3) != null){
+                                codigo3 = dato.nextInt();
+
+                                if (controladorPerro.read(codigo3) != null) {
                                     System.out.println("Ingrese en nombre del perro ");
-                                String nombre1 = dato.next();
-                                perro.setNombre(nombre1);
+                                    String nombre1 = dato.next();
+                                    perro.setNombre(nombre1);
 
-                                System.out.println("Ingrese la raza");
-                                String razaP1 = dato.next();
-                                perro.setRaza(razaP1);
+                                    System.out.println("Ingrese la raza");
+                                    String razaP1 = dato.next();
+                                    perro.setRaza(razaP1);
 
-                                System.out.println("Ingrese la audicion");
-                                double peso1 = dato.nextDouble();
-                                perro.setAudicion(peso1);
+                                    System.out.println("Ingrese la audicion");
+                                    double peso1 = dato.nextDouble();
+                                    perro.setAudicion(peso1);
 
-                                System.out.println("Ingrese la temperatura corporal");
-                                String temp1 = dato.next();
-                                perro.setTempCorporal(temp1);
+                                    System.out.println("Ingrese la temperatura corporal");
+                                    String temp1 = dato.next();
+                                    perro.setTempCorporal(temp1);
 
-                                System.out.println("ingrese el sexo ");
-                                String sex1 = dato.next();
-                                perro.setSexo(sex1);
+                                    System.out.println("ingrese el sexo ");
+                                    String sex1 = dato.next();
+                                    perro.setSexo(sex1);
 
-                                System.out.println("Ingrese el color ");
-                                String col1 = dato.next();
-                                perro.setColor(col1);
+                                    System.out.println("Ingrese el color ");
+                                    String col1 = dato.next();
+                                    perro.setColor(col1);
 
-                                System.out.println("Ingrese la edad del perro");
-                                int edadP1 = dato.nextInt();
-                                perro.setEdad(edadP1);
+                                    System.out.println("Ingrese la edad del perro");
+                                    int edadP1 = dato.nextInt();
+                                    perro.setEdad(edadP1);
 
-                                System.out.println("Ingrese el numero de huesos ");
-                                int numH1 = dato.nextInt();
-                                perro.setNumHueso(numH1);
+                                    System.out.println("Ingrese el numero de huesos ");
+                                    int numH1 = dato.nextInt();
+                                    perro.setNumHueso(numH1);
 
-                                System.out.println("Tiene pelo? \n Ingrese valores de 'true' o 'false' ");
-                                boolean pel1 = dato.nextBoolean();
-                                perro.setPelo(pel1);
+                                    System.out.println("Tiene pelo? \n Ingrese valores de 'true' o 'false' ");
+                                    boolean pel1 = dato.nextBoolean();
+                                    perro.setPelo(pel1);
 
-                                System.out.println("Ingrese que come el perro ");
-                                String comida1 = dato.next();
-                                perro.setComida(comida1);
+                                    System.out.println("Ingrese que come el perro ");
+                                    String comida1 = dato.next();
+                                    perro.setComida(comida1);
 
-                                System.out.println("Ingresse su habitat ");
-                                String hab1 = dato.next();
-                                perro.setHabitat(hab1);
+                                    System.out.println("Ingresse su habitat ");
+                                    String hab1 = dato.next();
+                                    perro.setHabitat(hab1);
 
-                                controladorPerro.update(perro);
-                                } else{
+                                    controladorPerro.update(perro);
+                                } else {
                                     System.out.println("El codigo ingresado no existe");
                                 }
                                 break;
@@ -539,7 +539,7 @@ public class Principal {
                         System.out.println("1. Create");
                         System.out.println("2. Read");
                         System.out.println("3. Update");
-                        System.out.println("4. Dalete");
+                        System.out.println("4. Delete");
                         System.out.println("5. Imprimir lista");
                         System.out.println("6. Regresar");
 
@@ -681,7 +681,8 @@ public class Principal {
                                 System.out.println("Solo digite números entre 1 y 6");
                         }
                     }
-
+            }
+            switch (opcion) {
                 case 5:
 
                     System.out.println("Has seleccionado la opción Salir");
@@ -691,5 +692,4 @@ public class Principal {
             }
         }
     }
-
 }
