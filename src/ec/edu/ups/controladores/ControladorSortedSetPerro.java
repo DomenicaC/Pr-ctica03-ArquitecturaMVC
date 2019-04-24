@@ -38,30 +38,28 @@ public class ControladorSortedSetPerro {
         return null;
     }
     
-    public Perro update(Perro objeto){
+    public void update(Perro objeto){
         if(lista.contains(objeto)){
             lista.remove(objeto);
             lista.add(objeto);
         }
-        return null;
     }
     
-    public Perro delete(int codigo){
+    public void delete(int codigo){
         for (Perro per : lista) {
             if (per.getCodigo() == codigo){
                 lista.remove(per);
                 break;
             }
         }
-        return null;
     }
     
-    public Perro print(){
+    public void print(){
         System.out.println("Lista \n");
+        
         for (Perro per : lista) {
-            System.out.println(per);
+            System.out.println(per.getNombre());
         }
-        return null;
     }
 
 }

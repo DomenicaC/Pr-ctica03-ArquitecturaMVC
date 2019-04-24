@@ -5,10 +5,7 @@
  */
 package ec.edu.ups.controladores;
 
-import ec.edu.ups.clases.Ballena;
 import ec.edu.ups.clases.Lagarto;
-import ec.edu.ups.clases.Perro;
-import ec.edu.ups.clases.Serpiente;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -29,7 +26,6 @@ public class ControladorSetLagarto {
         codigo ++;
         objeto.setCodigo(codigo);
         lista.add(objeto);
-        
     }
             
     public Lagarto read(int codigo){
@@ -41,22 +37,26 @@ public class ControladorSetLagarto {
         return null;
     }
     
-    public ControladorSetLagarto update(Lagarto objeto){
+    public void update(Lagarto objeto){
         if(lista.contains(objeto)){
             lista.remove(objeto);
             lista.add(objeto);
         }
-        return null;
     }
     
-    public ControladorSetLagarto delete(int codigo){
+    public void delete(int codigo){
         for (Lagarto lag : lista) {
             if (lag.getCodigo() == codigo){
                 lista.remove(lag);
                 break;
             }
         }
-        return null;
+    }
+    
+    public void print(){
+        for (Lagarto lag : lista) {
+            System.out.println(lag.getNombre());
+        }
     }
     
 }
