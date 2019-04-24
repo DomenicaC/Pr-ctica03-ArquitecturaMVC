@@ -184,6 +184,7 @@ public class Principal {
                                     String hab1 = dato.next();
                                     ballena.setHabitat(hab1);
 
+                                    ballena.setCodigo(codigo);
                                     controladorBallena.update(ballena);
                                 } else {
                                     System.out.println("El codigo ingresado no existe");
@@ -348,6 +349,7 @@ public class Principal {
                                     String colorL1 = dato.next();
                                     lagarto.setColor(colorL1);
 
+                                    lagarto.setCodigo(codigo2);
                                     controladorLagarto.update(lagarto);
                                 } else {
                                     System.out.println("El codigo ingresado no existe");
@@ -420,7 +422,7 @@ public class Principal {
                                 perro.setSexo(sex);
 
                                 System.out.println("Ingrese el color ");
-                                String col = dato.nextLine();
+                                String col = dato.next();
                                 perro.setColor(col);
 
                                 System.out.println("Ingrese la edad del perro");
@@ -504,6 +506,7 @@ public class Principal {
                                     String hab1 = dato.next();
                                     perro.setHabitat(hab1);
 
+                                    perro.setCodigo(codigo3);
                                     controladorPerro.update(perro);
                                 } else {
                                     System.out.println("El codigo ingresado no existe");
@@ -654,6 +657,7 @@ public class Principal {
                                     String colorL1 = dato.next();
                                     serpiente.setColor(colorL1);
 
+                                    serpiente.setCodigo(codigo4);
                                     controladorSerpiente.update(serpiente);
 
                                 } else {
