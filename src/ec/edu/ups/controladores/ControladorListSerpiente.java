@@ -13,12 +13,12 @@ import java.util.TreeMap;
  *
  * @author Domenica Cañizares
  */
-public class ControladorTreeMapSerpiente {
+public class ControladorListSerpiente {
 
     private TreeMap<Integer, String> lista;
     private int codigo;
 
-    public ControladorTreeMapSerpiente() {
+    public ControladorListSerpiente() {
         lista = new TreeMap<>();
     }
     /*

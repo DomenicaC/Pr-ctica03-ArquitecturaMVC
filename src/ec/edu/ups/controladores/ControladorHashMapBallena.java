@@ -30,6 +30,7 @@ public class ControladorHashMapBallena {
     }
     
     public Ballena read(int codigo){
+        return null;
         
     }
     
@@ -38,15 +39,17 @@ public class ControladorHashMapBallena {
     }
     
     public ControladorHashMapBallena delete(int codigo){
+        return null;
         
     }
     
     public Ballena print(){
         System.out.println("Lista \n");
-        Iterator it = map.keySet().iterator();
+        /*Iterator it = map.keySet().iterator();
         while (it.hasNext()) {
             Integer key = (Integer) it.next();
-            System.out.println("Clave: " + key + " -> Valor: " + map.get(key));
+            System.out.println("Clave: " + key + " -> Valor: " + map.get(key));*/
+        return null;
         }
     }
     /*
@@ -77,4 +80,4 @@ public class ControladorHashMapBallena {
     
     
     
-}
+
