@@ -38,6 +38,7 @@ public class Principal {
         System.out.println("Bienvenido al proyecto de Animal");
         while (!salir) {
 
+            //menu principal
             System.out.println("\n");
             System.out.println("1. CRUD Ballena -> TreeMap");
             System.out.println("2. CRUD Lagarto -> Set");
@@ -57,6 +58,7 @@ public class Principal {
                     int op;
                     while (!salir1) {
 
+                        //Submenu 
                         System.out.println("\n");
                         System.out.println("1. Create");
                         System.out.println("2. Read");

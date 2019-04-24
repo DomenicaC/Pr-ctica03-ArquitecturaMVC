@@ -12,6 +12,9 @@ import java.util.TreeMap;
 /**
  *
  * @author Domenica Cañizares
+ * @since 23-April-2019
+ * @version IDE 8.0.2
+ * @Clase controlador TreeMap en clase hija Ballena
  */
 public class ControladorTreeMapBallena {
 
@@ -23,12 +26,14 @@ public class ControladorTreeMapBallena {
         codigo = 0;
     }
 
+    //crear un num=evo objeto en la lista
     public void create(Ballena objeto) {
         codigo++;
         objeto.setCodigo(codigo);
         lista.put(codigo, objeto);
     }
 
+    //leer un objeto en la lista por medio del codigo
     public Ballena read(int codigo) {
         if (lista.get(codigo) != null) {
             return lista.get(codigo);
@@ -37,14 +42,17 @@ public class ControladorTreeMapBallena {
 
     }
 
+    //modificar un objeto en la lista por medio del codigo
     public void update(Ballena objeto) {
         lista.put(objeto.getCodigo(), objeto);
     }
 
+    //eliminar un objeto por medio del codigo
     public void delete(int codigo) {
         lista.remove(codigo);
     }
 
+    //imprime todos los objetos de la lista
     public void print() {
         System.out.println("Lista \n");
 

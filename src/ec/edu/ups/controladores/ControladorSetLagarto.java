@@ -12,6 +12,9 @@ import java.util.Set;
 /**
  *
  * @author Domenica Cañizares
+ * @since 23-April-2019
+ * @version IDE 8.0.2
+ * @Clase controlador Set en clase hija Lagarto
  */
 public class ControladorSetLagarto {
     private Set<Lagarto> lista;
@@ -22,12 +25,14 @@ public class ControladorSetLagarto {
         codigo=0;
     }
     
+    //crear un num=evo objeto en la lista
     public void create(Lagarto objeto){
         codigo ++;
         objeto.setCodigo(codigo);
         lista.add(objeto);
     }
-            
+        
+    //leer un objeto en la lista por medio del codigo
     public Lagarto read(int codigo){
         for (Lagarto lag : lista) {
             if (lag.getCodigo() == codigo) {
@@ -37,6 +42,7 @@ public class ControladorSetLagarto {
         return null;
     }
     
+    //modificar un objeto en la lista por medio del codigo
     public void update(Lagarto objeto){
         if(lista.contains(objeto)){
             lista.remove(objeto);
@@ -44,6 +50,7 @@ public class ControladorSetLagarto {
         }
     }
     
+    //eliminar un objeto por medio del codigo
     public void delete(int codigo){
         for (Lagarto lag : lista) {
             if (lag.getCodigo() == codigo){
@@ -53,6 +60,7 @@ public class ControladorSetLagarto {
         }
     }
     
+    //imprime todos los objetos de la lista
     public void print(){
         for (Lagarto lag : lista) {
             System.out.println(lag.getNombre());

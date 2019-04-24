@@ -12,6 +12,9 @@ import java.util.List;
 /**
  *
  * @author Domenica Cañizares
+ * @since 23-April-2019
+ * @version IDE 8.0.2
+ * @Clase controlador List en clase hija Serpiente
  */
 public class ControladorListSerpiente {
 
@@ -23,12 +26,14 @@ public class ControladorListSerpiente {
         codigo=0;
     }
     
+    //crear un num=evo objeto en la lista
     public void create(Serpiente objeto){
         codigo++;
         objeto.setCodigo(codigo);
         lista.add(objeto);
     }
     
+    //leer un objeto en la lista por medio del codigo
     public Serpiente read(int codigo){
         for (Serpiente ser : lista){
             if (ser.getCodigo() == codigo){
@@ -38,6 +43,7 @@ public class ControladorListSerpiente {
         return null;
     }
     
+    //modificar un objeto en la lista por medio del codigo
     public void update(Serpiente objeto){
         for (int i = 0; i < lista.size(); i++) {
             Serpiente elemento = new Serpiente();
@@ -49,6 +55,7 @@ public class ControladorListSerpiente {
         }
     }
     
+    //eliminar un objeto por medio del codigo
     public void delete(int codigo){
         for (int i = 0; i < lista.size(); i++) {
             Serpiente elemento = lista.get(i);
@@ -59,7 +66,7 @@ public class ControladorListSerpiente {
         }
     }
     
-    
+    //imprime todos los objetos de la lista
     public void print(){
         System.out.println("Lista \n");
         for (int i = 0; i < lista.size(); i++) {

@@ -12,6 +12,9 @@ import java.util.TreeSet;
 /**
  *
  * @author Domenica Cañizares
+ * @since 23-April-2019
+ * @version IDE 8.0.2
+ * @Clase controlador SortedSet en clase hija Perro
  */
 public class ControladorSortedSetPerro {
     private SortedSet<Perro> lista;
@@ -22,6 +25,7 @@ public class ControladorSortedSetPerro {
         codigo=0;
     }
     
+    //crear un num=evo objeto en la lista
     public void create(Perro objeto){
         codigo ++;
         objeto.setCodigo(codigo);
@@ -29,6 +33,7 @@ public class ControladorSortedSetPerro {
         
     }
             
+    //leer un objeto en la lista por medio del codigo
     public Perro read(int codigo){
         for (Perro per : lista) {
             if (per.getCodigo() == codigo) {
@@ -38,6 +43,7 @@ public class ControladorSortedSetPerro {
         return null;
     }
     
+    //modificar un objeto en la lista por medio del codigo
     public void update(Perro objeto){
         if(lista.contains(objeto)){
             lista.remove(objeto);
@@ -45,6 +51,7 @@ public class ControladorSortedSetPerro {
         }
     }
     
+    //eliminar un objeto por medio del codigo
     public void delete(int codigo){
         for (Perro per : lista) {
             if (per.getCodigo() == codigo){
@@ -54,6 +61,7 @@ public class ControladorSortedSetPerro {
         }
     }
     
+    //imprime todos los objetos de la lista
     public void print(){
         System.out.println("Lista \n");
         
