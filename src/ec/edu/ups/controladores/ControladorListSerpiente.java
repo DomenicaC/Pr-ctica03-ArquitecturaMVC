@@ -69,8 +69,9 @@ public class ControladorListSerpiente {
     //imprime todos los objetos de la lista
     public void print(){
         System.out.println("Lista \n");
-        for (int i = 0; i < lista.size(); i++) {
-            System.out.println(lista.get(i).getNombre());
+        
+        for (Serpiente serp : lista) {
+            System.out.println(serp.getNombre());
         }
     }
 
