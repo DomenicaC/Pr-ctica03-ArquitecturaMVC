@@ -139,7 +139,7 @@ public class Principal {
                                 System.out.println("Ingrese el codigo a modificar");
                                 codigo = dato.nextInt();
 
-                                if (controladorPerro.read(codigo) != null) {
+                                if (controladorBallena.read(codigo) != null) {
                                     System.out.println("Ingrese en nombre de la ballena ");
                                     String nombre1 = dato.next();
                                     ballena.setNombre(nombre1);
@@ -183,7 +183,7 @@ public class Principal {
                                     System.out.println("Ingresse su habitat ");
                                     String hab1 = dato.next();
                                     ballena.setHabitat(hab1);
-
+                                    
                                     ballena.setCodigo(codigo);
                                     controladorBallena.update(ballena);
                                 } else {
@@ -241,7 +241,6 @@ public class Principal {
 
                                 System.out.println("Ingrese en nombre del lagarto");
                                 String nombre = dato.next();
-                                //System.out.println("nombre "+nombre);
                                 lagarto.setNombre(nombre);
 
                                 System.out.println("Ingrese el tipo de sangre 'fria o caliente'");
@@ -572,6 +571,10 @@ public class Principal {
                                 System.out.println("ingrese la alimentacion");
                                 String ali = dato.next();
                                 serpiente.setAlimentacion(ali);
+                                
+                                System.out.println("Ingrese la especie");
+                                String es = dato.next();
+                                serpiente.setEspecie(es);
 
                                 System.out.println("¿Es venenosa? \n Ingrese valores de 'true' o 'false'");
                                 boolean veneno = dato.nextBoolean();
@@ -632,6 +635,10 @@ public class Principal {
                                     System.out.println("ingrese la alimentacion");
                                     String ali1 = dato.next();
                                     serpiente.setAlimentacion(ali1);
+                                    
+                                    System.out.println("Ingrese la especie");
+                                    String es1=dato.next();
+                                    serpiente.setEspecie(es1);
 
                                     System.out.println("¿Es venenosa? \n Ingrese valores de 'true' o 'false'");
                                     boolean veneno1 = dato.nextBoolean();
@@ -656,7 +663,7 @@ public class Principal {
                                     System.out.println("Ingresse el color de la serpiente");
                                     String colorL1 = dato.next();
                                     serpiente.setColor(colorL1);
-
+                                    
                                     serpiente.setCodigo(codigo4);
                                     controladorSerpiente.update(serpiente);
 
