@@ -41,6 +41,7 @@ Modela aplicaciones de software mediante diagramas de clase
 
 10.	Desarrollar el diagrama de clases correspondiente usando la herramienta LucidChart. Se debe agregar las clases controladores y la clase “Principal”
 
+
 11.	Generar informe de los resultados en el formato de prácticas. Debe incluir: 
 a. El desarrollo de cada uno de los puntos antes 
 b. La evidencia del correcto funcionamiento de cada punto. Para lo cual, se puede generar fotografías instantáneas (pantallazos). 
@@ -77,8 +78,12 @@ RESULTADO(S) OBTENIDO(S):
 
 
 CONCLUSIONES:
+•	Podemos concluir que los diccionarios son muy necesarios cuando se hacen las listas ya que nos ayuda a mejorar el orden de los objetos ingresados ya sea por código como es el TreeMap o por nombre como el HashMap.
+•	Los estudiantes podrán modelar e implementar aplicaciones de software mediante diagramas de clase y programación orientada a objetos.
 
 RECOMENDACIONES:
+•	Aplicar buenas prácticas de programación 
+•	Programar según las convenciones de los códigos de Java
 
 Nombre de estudiante: Domenica Vintimilla
 
