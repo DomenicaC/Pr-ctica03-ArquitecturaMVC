@@ -52,6 +52,30 @@ e. En el informe se debe incluir la firma digital del estudiante.
 
 RESULTADO(S) OBTENIDO(S):
 
+1.	Elegir en el menú principal           
+2. Crear un nuevo objeto
+
+![image](https://user-images.githubusercontent.com/49033368/56632376-1e4ea280-661f-11e9-922a-7c63835d0949.png)
+
+3.	Leer el objeto por medio del objeto
+
+![image](https://user-images.githubusercontent.com/49033368/56632438-653c9800-661f-11e9-90b2-88e7805ca12f.png)
+
+4.	Modificar un objeto                     
+![image](https://user-images.githubusercontent.com/49033368/56632450-72f21d80-661f-11e9-8e0d-b193a60dc587.png)
+
+5.	Datos modificados
+
+![image](https://user-images.githubusercontent.com/49033368/56632461-7dacb280-661f-11e9-812f-f2ce17b5ebd7.png)
+
+6.	crear un nuevo objeto y luego mostrar todos los objetos de la lista con el método TreeMap
+![image](https://user-images.githubusercontent.com/49033368/56632470-89987480-661f-11e9-99a6-78270e84b47f.png)
+
+7.	eliminar un objeto de la lista
+
+![image](https://user-images.githubusercontent.com/49033368/56632483-96b56380-661f-11e9-9420-9dc02cac8d68.png)
+
+
 CONCLUSIONES:
 
 RECOMENDACIONES:
